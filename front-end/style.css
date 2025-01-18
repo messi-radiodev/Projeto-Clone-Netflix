@@ -27,3 +27,21 @@ table {
     background-color: rgb(238, 255, 0);
     color: rgb(230, 11, 182);
 }
+.master {
+  /* width: 150px;
+  height: 150px; */
+  display: inline-block; /* ao invés de colocar width e height esse comando se adequa ao tamanho do conteúdo */
+  background-color: blue;
+  padding: 30px;
+  border: solid 5px pink;
+}
+.mini {
+  height: 150px;
+  width: 150px;
+  background-color: aqua;
+  border-radius: 100%;
+}
+
+/* position: absolute - colocar itens por cima dos outros itens */
+/* z-index: 1 , 2 , x ... - indicar a ordem de prioridade que vai aparecer sobrepondo os outros itens da tela */
+/* position: fixed - manter a posição na tela independente da rolagem */
