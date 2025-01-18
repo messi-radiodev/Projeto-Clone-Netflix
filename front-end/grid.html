@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .container {
+            background-color: orangered;
+            height: 200px;
+        }
+        .coluna {
+            height: 200px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> <!-- container-fluid horizontal inteira -->
+        <div class="row">
+            <div class="col-4 offset-2 coluna"> <!-- col-12 total, col-4 = 1/3 , col-6 = 50% -->
+                <!--- nesse caso offset-2 ele deu uma margem de 2 colunas-->
+                <div class="row">
+                    <div class="col-6 coluna" style="background-color: yellow;"></div>
+                </div>
+            </div>
+            <div class="col-4 coluna">
+
+        </div>
+        <div class="row">
+            <div class="col-4 coluna"> 
+                </div>
+                <div class="row"> 
+                    <div class="col-4 offset-4 coluna"></div>
+        <div class="row">
+        <div class="col coluna" style="background-color: rgb(255, 0, 0);"></div>
+        <div class="col coluna" style="background-color: rgb(139, 139, 139);"></div>
+        <div class="col coluna" style="background-color: rgb(0, 136, 255);"></div>
+        <div class="col coluna" style="background-color: rgb(9, 255, 0);"></div>
+        <div class="col coluna" style="background-color: rgb(204, 0, 255);"></div>
+    </div>
+        </div>
+
+        <h1><b>Estudando Grid</b></h1>
+    </div>
+</body>
+</html>
