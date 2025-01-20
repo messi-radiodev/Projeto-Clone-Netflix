@@ -1,25 +1,51 @@
+/* REGRAS GERAIS */
 body {
     background-color: black;
+    margin: 0;
+    padding: 0;
 }
+
+header {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0) 100%
+        ), url(assets/capafilme.png);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 700px;
+    
+}
+
+img.logo {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+}
+
+.btn-custom-white {
+    background: #fff;
+}
+.btn-custom-trlucid {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+.btn-custom-trlucid:hover {
+    color: black;
+    opacity: 0.5;
+    background-color: rgba(255,255,255,0.8);
+}
+.btn-custom-white:hover {
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* TELA DE LOGIN */
 
 body.bg_index {
     background-image: url(assets/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-header {
-    padding: 50px;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.69) 0%,
-        rgba(0, 0, 0, 0) 100%
-        )
-}
-
-img.logo {
-    width: 200px;
-    height: 50px;
 }
 
 h1 {
@@ -29,5 +55,48 @@ h1 {
 #caixadelogin {
     background-color: rgba(0, 0, 0, 0.69);
     padding: 50px;
-    margin-top: 20px;
+    margin-top: 100px;
+}
+
+/* LISTA DE FILMES */ 
+.listamenu {
+    list-style: none;
+}
+.logonetflix {
+    width: 120px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.listamenu li {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 45px;
+}
+.listamenu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white;
+}
+.listamenu a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+#hero {
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.logofilme {
+    margin-top: 100px;
+    width: 500px;
+}
+#infohero h1 {
+    margin-bottom: 20px;
+}
+#infohero p {
+    width: 500px;
+}
+#botaoassistir {
+    margin-right: 20px;
 }
