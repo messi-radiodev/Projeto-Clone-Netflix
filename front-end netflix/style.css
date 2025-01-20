@@ -261,11 +261,23 @@ section {
 .listaeps li:hover {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.05);
-
 }
-
+.select-container {
+    position: relative; /* Garante que o select tenha um contexto de posicionamento */
+    z-index: 10;
+}
 select {
-    width: 200px; /* ou o tamanho desejado */
-    height: auto;
-    overflow-y: auto;
-  }
+    background-color: #171717;
+    color: white;
+    padding: 10px;
+    border: 1px solid #555;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative; /* Garante que o select tenha posição própria */
+    z-index: 10; /* Garantir que o select esteja acima de elementos sobrepostos */
+}
+.modal-dialog, .modal-content {
+    background: #171717;
+    z-index: 100; /* Garantir que a modal fique acima de outros elementos */
+}
