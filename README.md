@@ -4,6 +4,11 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 1ª parte concluída: a parte do design, o visual do site, que já se encontram aqui, foi utilizado o Figma (Página web e mobile).
 
-2ª parte em processo: páginas tela de login e lista de filmes concluídas utilizando html e css. faltando somente a última página referente ao click em um filme específico.
+2ª parte "concluída": 95% finalizado, faltou colocar o modal em cada um dos filmes da lista, coloquei apenas no primeiro (o intuito é aprender).
+
+3ª parte back-end em processo...
+
+
+
 
 
