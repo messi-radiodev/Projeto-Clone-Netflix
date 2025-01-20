@@ -263,3 +263,9 @@ section {
     background: rgba(255, 255, 255, 0.05);
 
 }
+
+select {
+    width: 200px; /* ou o tamanho desejado */
+    height: auto;
+    overflow-y: auto;
+  }
