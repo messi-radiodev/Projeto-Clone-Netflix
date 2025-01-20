@@ -247,15 +247,19 @@ section {
     z-index: 3; /* Coloca os botões acima */
     pointer-events: auto;
 }
-#listaeps {
+.listaeps {
     list-style: none;
     padding: 0;
     margin: 0;
 }
-#listaeps li {
+.listaeps li {
     padding: 20px;
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
 }
-#listaeps li:hover {
+.listaeps li:hover {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.05);
+
 }
