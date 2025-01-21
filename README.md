@@ -6,7 +6,7 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 2ª parte "concluída": 95% finalizado, faltou colocar o modal em cada um dos filmes da lista, coloquei apenas no primeiro (o intuito é aprender).
 
-3ª parte back-end em processo...
+3ª parte ...
 
 
 
