@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto JS - Estudo das variáveis</title>
+</head>
+<body>
+    <h1>Projeto JS</h1>
+    <script>
+        /* window.alert("Hello, world!")
+        console.log ("Olá!")
+        console.warn("Oi")
+        console.error("F") */
+
+        const nome = "Gabriel Messias"; //string const = constante não se altera, valor fixo, nome sempre será Gabriel Messias.
+        let idade = 18; //number
+        let filme = "HP" //string = texto precisa estar entre aspas, crases...
+        let filmes = ["HP", 8, 10, "Reliquias da Morte", true] //arrays. varios dados dentro de uma variável entre cochetes
+        let naoexiste = undefined;
+        let vazio = null;
+
+        let filme_teste = { //objeto, é possivel colocar nomes específicos para indices, diferentes dos arrays.
+            nome: "dexter",
+            anolancamento: 2025,
+            lancado: false,
+            atores: ["Messis", "Tcharlis", "Malu"],
+            avaliacoes: {
+                avaliador1: 10,
+                avaliador2: 9.8,
+                avaliador3: 7.9
+            },
+            premiacoes: [ 
+                {ano: 2025, premio: "globo de ouro"},
+                {ano: 2026, premio: "oscar"},
+                {ano: 2024, premio: "silvio santos"}
+            ]
+        }
+
+        console.log(nome);
+        console.log(idade);
+        console.log(filme);
+        console.log(filmes);
+        console.log(filmes[1]);
+        console.log(filmes[0]);
+        console.log(filmes[3]);
+        console.log(filmes[4]);
+        console.log(naoexiste);
+        console.log(vazio);
+        console.log(filme_teste);
+        console.log(filme_teste.premiacoes);
+        console.log(filme_teste.premiacoes[0]);
+        console.log(filme_teste.premiacoes[0].ano);
+        console.log(filme_teste.premiacoes[0].premio);
+        console.log(filme_teste.premiacoes[0].ano + ' - ' + filme_teste.premiacoes[0].premio) //endereço completo
+
+        let vencedor = filme_teste.premiacoes[0].ano + ' - ' + filme_teste.premiacoes[0].premio
+
+        console.log(vencedor)
+    </script>
+</body>
+</html>
