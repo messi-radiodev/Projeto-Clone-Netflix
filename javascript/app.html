@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>App Filmes</title>
+    <style>
+        .container {
+            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.377);
+            padding-bottom: 30px;
+        }
+        pre {
+            padding: 20px ;
+            background: #ccc;
+            border-radius: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <pre id="debug">
+
+        </pre>
+        <h1>Filmes</h1>
+        <form class="jumbotrom">
+            <div class="row">
+                <div class="col-4">
+                    <label for="titulo">Título
+                        <input id="titulo" oninput="attdados()" type="text" class="form-control" placeholder="Título">
+                    </label>
+                    
+                </div>
+                <div class="col-3">
+                    <label for="url">Link/URL
+                        <input id="url" oninput="attdados()" type="url" class="form-control" placeholder="URL">
+                    </label>
+                    
+                </div>
+                <div class="col-3">
+                    <label for="categoria">Categoria <select id="categoria" onchange="attdados()" class="form-control">
+                        <option value="">Selecione uma categoria:</option>
+                        <option>Terror</option>
+                        <option>Suspense</option>
+                        <option>Comédia</option>
+                    </select></label>
+                    
+                        
+                    </select>
+                </div>
+                <div class="col-2">
+                    <label for="ano">Ano
+                        <input id="ano" oninput="attdados()" type="number" class="form-control">
+                    </label>
+                    
+                </div>
+            </div>
+            <br>
+            <a onclick="cadastrafilme()" style="display: block;" href="javascript:void(0)" class="btn btn-danger btn-lg btn-block ">
+            Cadastrar Filme
+            </a>
+        </form>
+        <br>
+      <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Título</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Ano</th>
+                <th scope="col" class="text-end">Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listafilmes">
+            
+      </table>
+    </div>
+</body>
+<script type="text/javascript">
+    var dados = {
+        nome: "",
+        url: "",
+        categoria: "",
+        ano: 0  
+    }
+    const attdados = () => {
+        dados = {
+        nome: document.getElementById('titulo').value,
+        url: document.getElementById('url').value,
+        categoria: document.getElementById('categoria').value,
+        ano: document.getElementById('ano').value
+        }
+    
+    console.log("Dados iniciais", dados);
+
+    document.getElementById('debug').innerHTML = JSON.stringify(dados, null, 4);
+
+    };	
+
+    const montaitem = () => {
+        const item = document.createElement('tr');
+        const id = new Date().getTime(); // ms do horário atual gerando um id unico
+        item.insertAdjacentHTML('beforeend', `
+                <td>${dados.nome}</td>
+                <td>${dados.categoria}</td>
+                <td>${dados.ano}</td>
+                <td class="text-end">
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm" data-url="${dados.url}">Acessar</a>
+                    <a href="javascript:void(0)" class="btn btn-danger btn-sm" data-id="${id}">Excluir</a>
+                </td>`);
+
+                return item;
+            }
+    const cadastrafilme = () => {
+        document.getElementById('listafilmes').appendChild(montaitem());
+        dados = {};
+    }
+</script>
+</html>
