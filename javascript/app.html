@@ -7,16 +7,16 @@
     <title>App Filmes</title>
     <style>
         .container {
-            margin-top: 50px;
-            background-color: rgba(0, 0, 0, 0.377);
-            padding-bottom: 30px;
-        }
-        pre {
-            padding: 20px ;
-            background: #ccc;
-            border-radius: 10px;
-            margin: 20px;
-        }
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding-bottom: 30px;
+}
+pre {
+    padding: 20px ;
+    background: #cccccc67;
+    border-radius: 10px;
+    margin: 20px;
+}
     </style>
 </head>
 <body>
@@ -78,44 +78,6 @@
       </table>
     </div>
 </body>
-<script type="text/javascript">
-    var dados = {
-        nome: "",
-        url: "",
-        categoria: "",
-        ano: 0  
-    }
-    const attdados = () => {
-        dados = {
-        nome: document.getElementById('titulo').value,
-        url: document.getElementById('url').value,
-        categoria: document.getElementById('categoria').value,
-        ano: document.getElementById('ano').value
-        }
-    
-    console.log("Dados iniciais", dados);
-
-    document.getElementById('debug').innerHTML = JSON.stringify(dados, null, 4);
-
-    };	
-
-    const montaitem = () => {
-        const item = document.createElement('tr');
-        const id = new Date().getTime(); // ms do horário atual gerando um id unico
-        item.insertAdjacentHTML('beforeend', `
-                <td>${dados.nome}</td>
-                <td>${dados.categoria}</td>
-                <td>${dados.ano}</td>
-                <td class="text-end">
-                    <a href="javascript:void(0)" class="btn btn-primary btn-sm" data-url="${dados.url}">Acessar</a>
-                    <a href="javascript:void(0)" class="btn btn-danger btn-sm" data-id="${id}">Excluir</a>
-                </td>`);
-
-                return item;
-            }
-    const cadastrafilme = () => {
-        document.getElementById('listafilmes').appendChild(montaitem());
-        dados = {};
-    }
+<script type="text/javascript" src="script.js">
 </script>
 </html>
