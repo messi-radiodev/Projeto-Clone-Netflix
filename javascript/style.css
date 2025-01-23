@@ -1,0 +1,11 @@
+.container {
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding-bottom: 30px;
+}
+pre {
+    padding: 20px ;
+    background: #cccccc67;
+    border-radius: 10px;
+    margin: 20px;
+}
