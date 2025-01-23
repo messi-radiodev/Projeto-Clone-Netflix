@@ -6,7 +6,9 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 2ª parte "concluída": 95% finalizado, faltou colocar o modal em cada um dos filmes da lista, coloquei apenas no primeiro (o intuito é aprender).
 
-3ª parte ...
+3ª parte concluída: entendendo melhor alguns conceitos e avançando em outros conceitos no JS.
+
+4ª em processo: back-end
 
 
 
