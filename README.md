@@ -10,7 +10,7 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 4ª concluida: backend finalizado (mongodb, express, morgan, cors, routes, json... enfim muito aprendizado) criado todo o banco de dados para o site da netflix
 
-5ª parte: estudo mais aprofundado do mongodb
+5ª parte em processo: estudo mais aprofundado do mongodb
 
 
 
