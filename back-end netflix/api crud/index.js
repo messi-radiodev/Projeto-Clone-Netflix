@@ -1,20 +1,22 @@
 const express = require("express");
 const morgan = require("morgan");
 const app = express();
-const mongoose = require("mongoose");
+const database = require("./src/services/database");
 const bodyParser = require("body-parser");
-const routes = require("./src/routes/main.routes");
+const filmeroutes = require("./src/routes/main.routes");
+const usuarioroutes = require("./src/routes/usuarios.routes");
+const cors = require("cors");
+const episodiosroutes = require("./src/routes/episodios.routes");
 
-
-mongoose.connect("mongodb://127.0.0.1:27017/Netflix")
-.then(() => console.log('Conectado ao MongoDB'))
-.catch(err => console.error('Erro ao conectar ao MongoDB:', err));
-
-
-
+// MIDDLEWARES
+app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan('dev'));
-app.use('/api',routes)
+
+// ROUTES
+app.use('/api',filmeroutes)
+app.use('/api/usuario',usuarioroutes)
+app.use('/api/episodios',episodiosroutes)
 
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');

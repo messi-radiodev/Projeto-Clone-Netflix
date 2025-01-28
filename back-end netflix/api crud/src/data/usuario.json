@@ -1,0 +1,23 @@
+[
+    {
+      "nome": "Gabriel Messias",
+      "email": "messiradiodev@teste.com",
+      "senha": "123"
+    },
+    {
+      "nome": "Malu Vilas Boas",
+      "email": "mvb@teste.com",
+      "senha": "123"
+    },
+    {
+      "nome": "Igor Francischetti",
+      "email": "igorfrancis@teste.com",
+      "senha": "123"
+    },
+    {
+      "nome": "Lara Alencar",
+      "email": "laraal@teste.com",
+      "senha": "123"
+    }
+  ]
+  

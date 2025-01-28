@@ -1,6 +1,39 @@
 const express = require('express');
 const router = express.Router();
 const Filme = require('../models/filme');
+const Temporada = require('../models/temporada');
+const _ = require('underscore');
+
+// recuperar tela home
+router.get('/home', async (req, res) => {
+    try {
+        // recuperar todos os filmes
+        let filmes = await Filme.find({});
+        let finalFilmes = [];
+        
+        // recuperar todas as temporadas
+        for (let filme of filmes) {
+            const temporadas = await Temporada.find({filme_id: filme._id});
+            const newFilme = {...filme._doc, temporadas};
+            finalFilmes.push(newFilme); 
+        }
+
+        // misturar resultados aleatoriamente
+        finalFilmes = _.shuffle(finalFilmes);
+
+        // filme principal
+        const filmePrincipal = finalFilmes[0];
+
+        // dividir em seções
+        const secoes = _.chunk(finalFilmes, 5);
+
+        res.json({error: false, filmePrincipal, secoes});
+        
+
+    } catch (err) {
+        res.json({error: true, message: err.message});
+    }
+})
 
 
 // pegar todos os registros
