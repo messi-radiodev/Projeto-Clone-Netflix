@@ -8,7 +8,7 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 3ª parte concluída: entendendo melhor alguns conceitos e avançando em outros conceitos no JS.
 
-4ª em processo: back-end
+4ª em processo: mongodb, insomnia, node.js, crud...
 
 
 
