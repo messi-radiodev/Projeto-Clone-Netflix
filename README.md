@@ -8,7 +8,7 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 3ª parte concluída: entendendo melhor alguns conceitos e avançando em outros conceitos no JS.
 
-4ª concluida: backend finalizado (mongodb, express, morgan, cors, routes, json... enfim muito aprendizado) criado todo o banco de dados para o site da netflix
+4ª concluida: backend finalizado (nodejs, mongodb, express, morgan, cors, routes, json... enfim muito aprendizado) criado todo o banco de dados para o site da netflix
 
 5ª parte em processo: estudo mais aprofundado do mongodb
 
