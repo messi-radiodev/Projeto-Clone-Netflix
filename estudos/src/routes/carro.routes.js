@@ -30,6 +30,24 @@ router.get('/:id', async (req, res) => {
     }
 })
 
+router.put('/:id', async (req, res) => {
+    try {
+        const carro = await Carro.findByIdAndUpdate(req.params.id, req.body , {new: true}); 
+        // new: true => para retornar o carro atualizado
+        res.json({error: false, carro})
+    } catch (err) {
+        res.json({error: true, message: err.message});
+    }
+})
+
+router.delete('/:id', async (req, res) => {
+    try {
+        await Carro.findByIdAndDelete(req.params.id);
+        res.json({error: false, carro})
+    } catch (err) {
+        res.json({error: true, message: err.message});
+    }
+})
 
 
 
