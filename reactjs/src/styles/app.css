@@ -1,0 +1,284 @@
+/* REGRAS GERAIS */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0) 100%
+        ), url(../assets/capafilme.png);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 700px;
+    
+}
+
+img.logo {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+}
+
+.btn-custom-white {
+    background: #fff;
+}
+.btn-custom-trlucid {
+    background-color: rgba(255, 255, 255, 0.692);
+    color: white;
+}
+.btn-custom-trlucid:hover {
+    color: rgb(255, 253, 253);
+    opacity: 0.5;
+    background-color: rgba(255,255,255,0.8);
+}
+.btn-custom-white:hover {
+    background-color: rgba(131, 131, 131, 0.8);
+}
+.btn-custom-round {
+    padding: 5px 9px !important;
+    z-index: 3;
+}
+
+.btn-custom-round:hover {
+    background-color:  rgba(255,255,255,0.8);
+}
+.opacity-50 {
+    opacity: 0.5;
+}
+
+/* TELA DE LOGIN */
+
+.bg_index {
+    background-image: url(../assets/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+}
+
+#caixadelogin {
+    background-color: rgba(0, 0, 0, 0.69);
+    padding: 50px;
+    margin-top: 30px;
+    z-index: 10;
+}
+
+/* LISTA DE FILMES */ 
+.listamenu {
+    list-style: none;
+}
+.logonetflix {
+    width: 120px;
+    height: 35px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.listamenu li {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 45px;
+}
+.listamenu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white;
+}
+.listamenu a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+}
+#hero {
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+#hero::after {
+    content: "";
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        #000 100%
+        );
+    position: absolute;
+    left: 0;
+    top: calc(700px - 350px);
+    
+}
+.logofilme {
+    margin-top: 100px;
+    width: 500px;
+}
+#infohero h1 {
+    margin-bottom: 20px;
+    z-index: 1;
+}
+#infohero p {
+    width: 500px;
+    z-index: 1;
+}
+#botaoassistir {
+    margin-right: 20px;
+    z-index: 1;
+}
+#botao {
+    z-index: 1;
+}
+#conteudo {
+    margin-top: 50px;
+}
+.listafilmes {
+    overflow-x: scroll;
+    list-style: none;
+    padding: 20px 0;
+    white-space: nowrap;
+    display: block;
+}
+.listafilmes::-webkit-scrollbar {
+    display: none;
+}
+.filme {
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.filme:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 100;
+    transition: 0.5s;
+}
+.filme:hover .filmeinfo {
+    transform: scale(1);
+    transition: 0.5s;
+}
+.filmeinfo {
+    background: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    transform: scale(0);
+}
+.filmeinfo .col-12 {
+    margin-top: 5px;
+}
+.filmeinfo .col-12:first-child {
+    margin-bottom: 20px;
+}
+.filmeinfo p {
+    color: #7E7B7B;
+    font-size: 12px;
+}
+.filmeinfo p text {
+    color: white;
+}
+section {
+    margin-bottom: -100px;
+}
+
+/* MODAL */
+.modal-dialog, .modal-content {
+    background: #171717
+}
+.modal-dialog {
+    max-width: 600px;
+}
+.modal-hero {
+    height: 300px;
+    background-image: url(../assets/capafilme.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+.modal-hero::after {
+    content: "";
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: linear-gradient(180deg, rgba(25, 25, 25, 0) 0%, #171717 100%);
+    position: absolute;
+    left: 0;
+    margin-top: -170px;
+    z-index: 1;
+    pointer-events: none;
+    
+}
+.modal-hero img {
+    width: 250px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+.modal-hero-info {
+    position: relative;
+    z-index: 2;
+}
+.modal-hero-info button:first-child {
+    margin-right: 20px;
+}
+.filme-descricao {
+    font-size: 15px;
+    color: white;
+    margin-top: 40px;
+}
+.filme-elenco {
+    font-size: 13px;
+    color:rgba(255, 255, 255, 0.55);
+    margin-top: 15px;
+}
+.filme-elenco text {
+    color: white;
+}
+.modal-hero-info button, .modal-hero-info a {
+    position: relative;
+    z-index: 3; /* Coloca os botões acima */
+    pointer-events: auto;
+}
+.listaeps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.listaeps li {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    pointer-events: auto;
+}
+.listaeps li:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+}
+.select-container {
+    position: relative; /* Garante que o select tenha um contexto de posicionamento */
+    z-index: 10;
+}
+select {
+    background-color: #171717;
+    color: white;
+    padding: 10px;
+    border: 1px solid #555;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    position: relative; /* Garante que o select tenha posição própria */
+    z-index: 10; /* Garantir que o select esteja acima de elementos sobrepostos */
+}
+.modal-dialog, .modal-content {
+    background: #171717;
+    z-index: 100; /* Garantir que a modal fique acima de outros elementos */
+}
