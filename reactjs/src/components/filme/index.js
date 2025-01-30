@@ -1,11 +1,11 @@
 import React from "react";
 
 
-const Filme = () => {
+const Filme = ({filme}) => {
 
     return (
         <li className="filme" data-bs-toggle="modal" data-bs-target="#modal-filme">
-                  <img src={require("../../assets/filmes/lucifer.jpg")} className="img-fluid" alt="Lucifer" />
+                  <img src={filme.thumb} className="img-fluid" alt="Lucifer" />
                   <div className="filmeinfo">
                     <div className="col-12">
                       <a href="#" className="btn-custom-round btn btn-light rounded-circle">

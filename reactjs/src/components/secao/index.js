@@ -1,15 +1,15 @@
 import React from "react";
 import Filme from "../filme";
 
-const Secao = () => {
+const Secao = ({secao}) => {
     return (
         <section>
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <h5 className="text-white">Populares da Netflix</h5>
+              <h5 className="text-white">{secao[0]?.generos[0]}</h5>
               <ul className="listafilmes">
-                <Filme/>
+                {secao.map(filme => <Filme filme={filme}/>)}	
     
               </ul>
             </div>
