@@ -31,7 +31,7 @@ const Header = () => {
       </ul>
     </div>
     <div className="col-2 text-end">
-      <a onClick={logout} className="text-white">SAIR</a>
+      <a id="butexit" onClick={logout} className="text-white">SAIR</a>
 
     </div>
   </header>

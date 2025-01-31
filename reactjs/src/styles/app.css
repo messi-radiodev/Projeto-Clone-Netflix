@@ -78,6 +78,17 @@ h1 {
 }
 
 /* LISTA DE FILMES */ 
+#butexit {
+     
+  z-index: 999; /* Garante que o botão esteja acima de outros elementos */
+  position: relative; /* Necessário para o uso do z-index */
+  pointer-events: auto; /* Certifique-se de que o botão responde ao clique */
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 50px;
+  
+}
+
 .listamenu {
     list-style: none;
     position: relative;
