@@ -12,7 +12,7 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 5ª parte concluida: entendendo melhor CRUD / mongoDB
 
-6ª parte em processo: inicio do estudo com ReactJS
+6ª parte concluida: ReactJS, legal demais, bastante função que melhora a vida do programador.
 
 
 
