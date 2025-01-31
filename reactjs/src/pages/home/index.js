@@ -6,14 +6,10 @@ import Secao from '../../components/secao';
 import api from '../../services/api';
 
 const Home = () => {
-
     const [filmeprincipal, setfilmePrincipal] = useState({});
     const [secoes, setSecoes] = useState([]);
 
-
     const getHome = async () => {
-
-        
         try {
             const response = await api.get('api/home');
             const res = response.data;
@@ -22,8 +18,6 @@ const Home = () => {
                 alert(res.message)
                 return false;
             }
-            
-
             
             setfilmePrincipal(res.filmePrincipal);
             setSecoes(res.secoes);
@@ -39,25 +33,20 @@ const Home = () => {
     
     return (
         <>
+            <ModalFilme />
 
-        <ModalFilme />
+            <div className="container-fluid">
+                <Header />
+            </div>
 
-<div className="container-fluid">
+            <Hero filme={filmeprincipal} />
 
-    <Header />
-    
-</div>
-
-    <Hero filme={filmeprincipal} />
-
-<div id="conteudo">
-      
-     {secoes.map(secao => <Secao secao={secao} />)}
-
-
-    </div>
-   </> 
-    
+            <div id="conteudo">
+                {secoes.map((secao, index) => (
+                    <Secao key={`secao-${index}`} secao={secao} />
+                ))}
+            </div>
+        </> 
     )
 };
 

@@ -3,8 +3,16 @@ import React from "react";
 
 const Filme = ({filme}) => {
 
+  const selectFilme = () => {
+    const event = new CustomEvent('selectFilme', {detail: filme});
+
+      window.dispatchEvent(event);
+
+
+  }
+
     return (
-        <li className="filme" data-bs-toggle="modal" data-bs-target="#modal-filme">
+        <li onClick={selectFilme} className="filme" data-bs-toggle="modal" data-bs-target="#modal-filme">
                   <img src={filme.thumb} className="img-fluid" alt="Lucifer" />
                   <div className="filmeinfo">
                     <div className="col-12">
