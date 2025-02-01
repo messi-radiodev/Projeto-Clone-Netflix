@@ -8,7 +8,7 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 4ª parte: foi finalizado a pasta "back-end netflix" com uso de nodejs, mongodb, mongoose, express, morgan, cors, routes, json, api, crud... E foi criado todo o banco de dados para a netflix.
 
-6ª parte: utilização do ReactJS para unir o front e o back-end. resolvido o processo da etapa 2 onde o modal só abria se clicasse no primeiro filme da lista. além da utilização de todo banco de dados através do insomnia para utilização de diversos dados. 
+6ª parte: utilização do ReactJS para unir o front e o back-end e encontra-se na pasta reactjs. resolvido o processo da etapa 2 onde o modal só abria se clicasse no primeiro filme da lista. além da utilização de todo banco de dados através do insomnia para utilização de diversos dados. 
 
 7ª parte em processo: inicio de estudo com React Native.
 
