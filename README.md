@@ -10,7 +10,7 @@ Mostrando o passo a passo do meu processo de estudos, recriando o site do netfli
 
 6ª parte: utilização do ReactJS para unir o front e o back-end e encontra-se na pasta reactjs. resolvido o processo da etapa 2 onde o modal só abria se clicasse no primeiro filme da lista. além da utilização de todo banco de dados através do insomnia para utilização de diversos dados. 
 
-7ª parte em processo: inicio de estudo com React Native.
+7ª parte em processo: inicio de estudo com React Native. (PAUSA NA PARTE FINAL DO PROJETO PARA INICIO DO CURSO DE FRONT-END NA FORD)
 
 
 
