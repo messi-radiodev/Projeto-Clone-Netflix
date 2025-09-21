@@ -50,7 +50,7 @@ Caso tenha interesse em contribuir ou dar sugestões para melhorias, fique à vo
 ---
 
 ## 📬 Contato
-Se quiser acompanhar mais projetos, siga-me no GitHub e no LinkedIn https://www.linkedin.com/in/messi-radiodev/! 🚀
+Se quiser acompanhar mais projetos, siga-me no GitHub e no LinkedIn https://www.linkedin.com/in/gabrielmessias-dev! 🚀
 
 
 
